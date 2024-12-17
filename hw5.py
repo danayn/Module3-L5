@@ -3,15 +3,11 @@
 1. Exploring Python's OS Module
 
 Objective: The goal of this assignment is to deepen your understanding of the OS module in Python.
-
 Task 1: Directory Inspector:
-
 Problem Statement: Create a Python script that lists all files and subdirectories in a given directory.
 Your script should prompt the user for the directory path and then display the contents.
-
 Code Example:
     import os
-
     def list_directory_contents(path):
         # List and print all files and subdirectories in the given path
 Expected Outcome: The script should correctly list all files and subdirectories in the specified directory. 
@@ -24,3 +20,27 @@ make sure the function is called and runs.
 The goal of this note is to ensure that all code in your Python file runs smoothly and that is has been tested.
 
 '''
+import os
+
+path = str(input("Please Enter the directory path fully then the contents will be displayed: "))
+#example_path = "/Users/danielkassaye/Documents/codingtemple-kekambas-142/module3/L5/"
+
+path = path + ""
+def list_directory_contents(path):
+    # List and print all files and subdirectories in the given path
+    d_list = os.listdir(path)
+    print("The Files and subdirectories in the'", path, "' directory are:")
+    print()
+    print(d_list)
+    print()
+
+list_directory_contents(path)
+
+
+
+
+
+
+
+
+        

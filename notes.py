@@ -13,15 +13,19 @@ https://www.tutorialspoint.com/python/file_seek.htm
 
 
 '''
-
+import os
 # File handling is an important part of any web application.
 
 # Python has several functions for creating, reading, updating, and deleting files.
 
-f = open("demofile3.txt", "w")
+f = open("demofile.txt", "w")
 f.write("Woops! I have deleted the content!")
+f.write("  Hi Daniel")
 f.close()
 
 #open and read the file after the overwriting:
+f = open("demofile3.txt", "r")
+print(f.read())
+
 f = open("demofile3.txt", "r")
 print(f.read())
